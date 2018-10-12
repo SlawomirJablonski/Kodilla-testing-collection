@@ -23,13 +23,13 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorEmptyList(){
         //Given
-        OddNumbersExterminator exterminator = new OddNumbersExterminator();
+        OddNumbersExterminator emptyExterminator = new OddNumbersExterminator();
         ArrayList<Integer> givenList = new ArrayList<>();
 
         //When
         ArrayList<Integer> expectedArray = new ArrayList<>();
 
-        ArrayList<Integer> result = exterminator.exterminate(givenList);
+        ArrayList<Integer> result = emptyExterminator.exterminate(givenList);
 
         System.out.println("Testing " + result);
 
@@ -42,7 +42,7 @@ public class CollectionTestSuite {
         //Given
         Integer firstNumber = 5;
         Integer secondNumber = 6;
-        OddNumbersExterminator cos = new OddNumbersExterminator();
+        OddNumbersExterminator normalExterminator = new OddNumbersExterminator();
         ArrayList<Integer> givenList = new ArrayList<>();
         givenList.add(firstNumber);
         givenList.add(secondNumber);
@@ -51,7 +51,7 @@ public class CollectionTestSuite {
         ArrayList<Integer> expectedArray = new ArrayList<>();
         expectedArray.add(6);
 
-        ArrayList<Integer> result = cos.exterminate(givenList);
+        ArrayList<Integer> result = normalExterminator.exterminate(givenList);
 
         System.out.println("Testing " + result);
 
